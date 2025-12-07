@@ -1,41 +1,70 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Backend (Laravel) - dengan prefix backend/
+backend/*.log
+backend/.DS_Store
+backend/.env
+backend/.env.backup
+backend/.env.production
+backend/.phpactor.json
+backend/.phpunit.result.cache
+backend/.fleet
+backend/.idea
+backend/.nova
+backend/.phpunit.cache
+backend/.vscode
+backend/.zed
+backend/auth.json
+backend/node_modules
+backend/public/build
+backend/public/hot
+backend/public/storage
+backend/storage/*.key
+backend/storage/pail
+backend/vendor
+backend/Homestead.json
+backend/Homestead.yaml
+backend/Thumbs.db
 
+# Frontend (Next.js) - dengan prefix frontend/
 # dependencies
-/node_modules
-/.pnp
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/versions
+frontend/node_modules
+frontend/.pnp
+frontend/.pnp.*
+frontend/.yarn/*
+!frontend/.yarn/patches
+!frontend/.yarn/plugins
+!frontend/.yarn/releases
+!frontend/.yarn/versions
 
 # testing
-/coverage
+frontend/coverage
 
 # next.js
-/.next/
-/out/
+frontend/.next/
+frontend/out/
 
 # production
-/build
+frontend/build
 
 # misc
-.DS_Store
-*.pem
+frontend/.DS_Store
+frontend/*.pem
 
 # debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files
+frontend/.env*
 
 # vercel
-.vercel
+frontend/.vercel
 
 # typescript
-*.tsbuildinfo
-next-env.d.ts
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+
+# General
+.DS_Store
+*.log
